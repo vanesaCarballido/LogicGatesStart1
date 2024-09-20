@@ -1,5 +1,4 @@
-using LogicGatesStart;
-
+namespace LogicGatesStart;
 
 public class Program
 {
