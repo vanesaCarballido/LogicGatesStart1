@@ -6,7 +6,6 @@ public class LogicaVerdadero: IValorVerdad
     {
         
     }
-
     public static IValorVerdad Instance { get; } = new LogicaVerdadero();
     public bool Evaluar
     {

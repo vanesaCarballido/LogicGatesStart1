@@ -10,6 +10,14 @@ public class CompuertaAND: IValorVerdad
         this.entradas.Add(entrada1);
     }
 
+    public string GetNombre()
+    {
+        return this.nombre;
+    }
+    public void AgregarEntrada(IValorVerdad entrada)
+    {
+        this.entradas.Add(entrada);
+    }
     public bool Evaluar
     {
         get
