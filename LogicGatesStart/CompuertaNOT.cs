@@ -4,10 +4,10 @@ public class CompuertaNOT: IValorVerdad
 {
     private string nombre;
     private IValorVerdad entrada;
-    public CompuertaNOT(string nombre, IValorVerdad entrada1)
+    public CompuertaNOT(string nombre, IValorVerdad entrada)
     {
         this.nombre = nombre;
-        this.entrada = entrada1;
+        this.entrada = entrada;
     }
     public string GetNombre()
     {

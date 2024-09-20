@@ -4,10 +4,10 @@ public class CompuertaOR: IValorVerdad
 {
     private string nombre;
     private List<IValorVerdad> entradas = new List<IValorVerdad>();
-    public CompuertaOR(string nombre,IValorVerdad entrada1)
+    public CompuertaOR(string nombre,IValorVerdad entrada)
     {
         this.nombre = nombre;
-        this.entradas.Add(entrada1);
+        this.entradas.Add(entrada);
     }
     public string GetNombre()
     {
