@@ -7,7 +7,6 @@ namespace LogicGatesStartTests;
 [TestOf(typeof(GarageGate))]
 public class GarageGateTest
 {
-
     [Test]
     public void METHOD()
     {
@@ -19,7 +18,7 @@ public class GarageGateTest
     {
         bool resultadoEsperado = false;
 
-        GarageGate caso1 = new GarageGate(LogicaFalso.Instance, LogicaFalso.Instance, LogicaFalso.Instance);
+        GarageGate caso1 = new GarageGate(ValorFalso.Instance, ValorFalso.Instance, ValorFalso.Instance);
 
         Assert.That(resultadoEsperado, Is.EqualTo(caso1.Evaluar));
     }
@@ -29,7 +28,7 @@ public class GarageGateTest
     {
         bool resultadoEsperado = false;
 
-        GarageGate caso2 = new GarageGate(LogicaFalso.Instance, LogicaFalso.Instance, LogicaVerdadero.Instance);
+        GarageGate caso2 = new GarageGate(ValorFalso.Instance, ValorFalso.Instance, ValorVerdadero.Instance);
         
         Assert.That(resultadoEsperado, Is.EqualTo(caso2.Evaluar));
     }
@@ -39,7 +38,7 @@ public class GarageGateTest
     {
         bool resultadoEsperado = false;
 
-        GarageGate caso3 = new GarageGate(LogicaFalso.Instance, LogicaVerdadero.Instance, LogicaFalso.Instance);
+        GarageGate caso3 = new GarageGate(ValorFalso.Instance, ValorVerdadero.Instance, ValorFalso.Instance);
         
         Assert.That(resultadoEsperado, Is.EqualTo(caso3.Evaluar));
     }
@@ -49,7 +48,7 @@ public class GarageGateTest
     {
         bool resultadoEsperado = false;
 
-        GarageGate caso4 = new GarageGate(LogicaFalso.Instance, LogicaVerdadero.Instance, LogicaVerdadero.Instance);
+        GarageGate caso4 = new GarageGate(ValorFalso.Instance, ValorVerdadero.Instance, ValorVerdadero.Instance);
         
         Assert.That(resultadoEsperado, Is.EqualTo(caso4.Evaluar));
     }
@@ -59,7 +58,7 @@ public class GarageGateTest
     {
         bool resultadoEsperado = true;
 
-        GarageGate caso5 = new GarageGate(LogicaVerdadero.Instance, LogicaFalso.Instance, LogicaFalso.Instance);
+        GarageGate caso5 = new GarageGate(ValorVerdadero.Instance, ValorFalso.Instance, ValorFalso.Instance);
         
         Assert.That(resultadoEsperado, Is.EqualTo(caso5.Evaluar));
     }
@@ -69,7 +68,7 @@ public class GarageGateTest
     {
         bool resultadoEsperado = false;
 
-        GarageGate caso6 = new GarageGate(LogicaVerdadero.Instance, LogicaFalso.Instance, LogicaVerdadero.Instance);
+        GarageGate caso6 = new GarageGate(ValorVerdadero.Instance, ValorFalso.Instance, ValorVerdadero.Instance);
         
         Assert.That(resultadoEsperado, Is.EqualTo(caso6.Evaluar));
     }
@@ -79,7 +78,7 @@ public class GarageGateTest
     {
         bool resultadoEsperado = false;
 
-        GarageGate caso7 = new GarageGate(LogicaVerdadero.Instance, LogicaVerdadero.Instance, LogicaFalso.Instance);
+        GarageGate caso7 = new GarageGate(ValorVerdadero.Instance, ValorVerdadero.Instance, ValorFalso.Instance);
         
         Assert.That(resultadoEsperado, Is.EqualTo(caso7.Evaluar));
     }
@@ -89,7 +88,7 @@ public class GarageGateTest
     {
         bool resultadoEsperado = true;
 
-        GarageGate caso8 = new GarageGate(LogicaVerdadero.Instance, LogicaVerdadero.Instance, LogicaVerdadero.Instance);
+        GarageGate caso8 = new GarageGate(ValorVerdadero.Instance, ValorVerdadero.Instance, ValorVerdadero.Instance);
         
         Assert.That(resultadoEsperado, Is.EqualTo(caso8.Evaluar));
     }

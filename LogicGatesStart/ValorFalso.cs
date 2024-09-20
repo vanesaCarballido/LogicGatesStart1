@@ -1,13 +1,13 @@
 namespace LogicGatesStart;
 
-public class LogicaFalso: IValorVerdad
+public class ValorFalso: IValorVerdad
 {
-    private LogicaFalso()
+    private ValorFalso()
     {
         
     }
 
-    public static IValorVerdad Instance { get; } = new LogicaFalso();
+    public static IValorVerdad Instance { get; } = new ValorFalso();
     public bool Evaluar
     {
         get

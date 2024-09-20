@@ -18,9 +18,9 @@ public class CompuertaORTest
     public void TestCrearCompuertaOR()
     {
         string nombreEsperado = "Or1";
-        IValorVerdad entradaEsperada = LogicaVerdadero.Instance;
+        IValorVerdad entradaEsperada = ValorVerdadero.Instance;
 
-        CompuertaOR or1 = new CompuertaOR("Or1", LogicaVerdadero.Instance);
+        CompuertaOR or1 = new CompuertaOR("Or1", ValorVerdadero.Instance);
         
         Assert.That(nombreEsperado, Is.EqualTo(or1.GetNombre()));
         Assert.That(entradaEsperada, Is.EqualTo(or1.GetEntradas()[0]));
@@ -31,8 +31,8 @@ public class CompuertaORTest
     {
         bool resultadoEsperado = true;
 
-        CompuertaOR or1 = new CompuertaOR("Or1", LogicaVerdadero.Instance);
-        or1.AgregarEntrada(LogicaVerdadero.Instance);
+        CompuertaOR or1 = new CompuertaOR("Or1", ValorVerdadero.Instance);
+        or1.AgregarEntrada(ValorVerdadero.Instance);
 
         Assert.That(resultadoEsperado, Is.EqualTo(or1.Evaluar));
     }
@@ -42,8 +42,8 @@ public class CompuertaORTest
     {
         bool resultadoEsperado = true;
 
-        CompuertaOR or1 = new CompuertaOR("Or1", LogicaVerdadero.Instance);
-        or1.AgregarEntrada(LogicaFalso.Instance);
+        CompuertaOR or1 = new CompuertaOR("Or1", ValorVerdadero.Instance);
+        or1.AgregarEntrada(ValorFalso.Instance);
 
         Assert.That(resultadoEsperado, Is.EqualTo(or1.Evaluar));
     }
@@ -53,8 +53,8 @@ public class CompuertaORTest
     {
         bool resultadoEsperado = true;
 
-        CompuertaOR or1 = new CompuertaOR("Or1", LogicaFalso.Instance);
-        or1.AgregarEntrada(LogicaVerdadero.Instance);
+        CompuertaOR or1 = new CompuertaOR("Or1", ValorFalso.Instance);
+        or1.AgregarEntrada(ValorVerdadero.Instance);
 
         Assert.That(resultadoEsperado, Is.EqualTo(or1.Evaluar));
     }
@@ -64,8 +64,8 @@ public class CompuertaORTest
     {
         bool resultadoEsperado = false;
 
-        CompuertaOR or1 = new CompuertaOR("Or1", LogicaFalso.Instance);
-        or1.AgregarEntrada(LogicaFalso.Instance);
+        CompuertaOR or1 = new CompuertaOR("Or1", ValorFalso.Instance);
+        or1.AgregarEntrada(ValorFalso.Instance);
 
         Assert.That(resultadoEsperado, Is.EqualTo(or1.Evaluar));
     }

@@ -18,9 +18,9 @@ public class CompuertaANDTest
     public void TestCrearCompuertaAND()
     {
         string nombreEsperado = "And1";
-        IValorVerdad entradaEsperada = LogicaVerdadero.Instance;
+        IValorVerdad entradaEsperada = ValorVerdadero.Instance;
 
-        CompuertaAND and1 = new CompuertaAND("And1", LogicaVerdadero.Instance);
+        CompuertaAND and1 = new CompuertaAND("And1", ValorVerdadero.Instance);
         
         Assert.That(nombreEsperado, Is.EqualTo(and1.GetNombre()));
         Assert.That(entradaEsperada, Is.EqualTo(and1.GetEntradas()[0]));
@@ -31,8 +31,8 @@ public class CompuertaANDTest
     {
         bool resultadoEsperado = true;
 
-        CompuertaAND and1 = new CompuertaAND("And1", LogicaVerdadero.Instance);
-        and1.AgregarEntrada(LogicaVerdadero.Instance);
+        CompuertaAND and1 = new CompuertaAND("And1", ValorVerdadero.Instance);
+        and1.AgregarEntrada(ValorVerdadero.Instance);
 
         Assert.That(resultadoEsperado, Is.EqualTo(and1.Evaluar));
     }
@@ -42,8 +42,8 @@ public class CompuertaANDTest
     {
         bool resultadoEsperado = false;
 
-        CompuertaAND and1 = new CompuertaAND("And1", LogicaVerdadero.Instance);
-        and1.AgregarEntrada(LogicaFalso.Instance);
+        CompuertaAND and1 = new CompuertaAND("And1", ValorVerdadero.Instance);
+        and1.AgregarEntrada(ValorFalso.Instance);
 
         Assert.That(resultadoEsperado, Is.EqualTo(and1.Evaluar));
     }
@@ -53,8 +53,8 @@ public class CompuertaANDTest
     {
         bool resultadoEsperado = false;
 
-        CompuertaAND and1 = new CompuertaAND("And1", LogicaFalso.Instance);
-        and1.AgregarEntrada(LogicaVerdadero.Instance);
+        CompuertaAND and1 = new CompuertaAND("And1", ValorFalso.Instance);
+        and1.AgregarEntrada(ValorVerdadero.Instance);
 
         Assert.That(resultadoEsperado, Is.EqualTo(and1.Evaluar));
     }
@@ -64,8 +64,8 @@ public class CompuertaANDTest
     {
         bool resultadoEsperado = false;
 
-        CompuertaAND and1 = new CompuertaAND("And1", LogicaFalso.Instance);
-        and1.AgregarEntrada(LogicaFalso.Instance);
+        CompuertaAND and1 = new CompuertaAND("And1", ValorFalso.Instance);
+        and1.AgregarEntrada(ValorFalso.Instance);
 
         Assert.That(resultadoEsperado, Is.EqualTo(and1.Evaluar));
     }

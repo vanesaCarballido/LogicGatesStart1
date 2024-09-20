@@ -18,9 +18,9 @@ public class CompuertaNOTTest
     public void TestCrearCompuertaNOT()
     {
         string nombreEsperado = "Not1";
-        IValorVerdad entradaEsperada = LogicaVerdadero.Instance;
+        IValorVerdad entradaEsperada = ValorVerdadero.Instance;
 
-        CompuertaNOT not1 = new CompuertaNOT("Not1", LogicaVerdadero.Instance);
+        CompuertaNOT not1 = new CompuertaNOT("Not1", ValorVerdadero.Instance);
         
         Assert.That(nombreEsperado, Is.EqualTo(not1.GetNombre()));
         Assert.That(entradaEsperada, Is.EqualTo(not1.GetEntrada()));
@@ -31,7 +31,7 @@ public class CompuertaNOTTest
     {
         bool resultadoEsperado = false;
 
-        CompuertaNOT not1 = new CompuertaNOT("Not1", LogicaVerdadero.Instance);
+        CompuertaNOT not1 = new CompuertaNOT("Not1", ValorVerdadero.Instance);
         
         Assert.That(resultadoEsperado, Is.EqualTo(not1.Evaluar));
     }
@@ -41,7 +41,7 @@ public class CompuertaNOTTest
     {
         bool resultadoEsperado = true;
 
-        CompuertaNOT not1 = new CompuertaNOT("Not1", LogicaFalso.Instance);
+        CompuertaNOT not1 = new CompuertaNOT("Not1", ValorFalso.Instance);
         
         Assert.That(resultadoEsperado, Is.EqualTo(not1.Evaluar));
     }
