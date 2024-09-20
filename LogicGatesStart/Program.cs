@@ -23,7 +23,7 @@ public class Program
         CompuertaNOT not1 = new CompuertaNOT("NOT1", and1);
         
         //Evaluar salida final del circuito
-        Console.Write($"Resultado final con compuerta {not1.GetNombre()} es: {not1.Evaluar}");
+        Console.WriteLine($"Resultado final con compuerta {not1.GetNombre()} es: {not1.Evaluar}");
     }
     
 }

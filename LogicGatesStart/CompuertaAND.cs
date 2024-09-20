@@ -3,18 +3,16 @@ namespace LogicGatesStart;
 public class CompuertaAND: IValorVerdad
 {
     private string nombre;
-    private List<IValorVerdad> entradas = new List<IValorVerdad>();
+    private List<IValorVerdad> entradas = new List<IValorVerdad>(); 
     public CompuertaAND(string nombre, IValorVerdad entrada1)
     {
         this.nombre = nombre;
         this.entradas.Add(entrada1);
     }
-
     public string GetNombre()
     {
         return this.nombre;
     }
-
     public List<IValorVerdad> GetEntradas()
     {
         return this.entradas;
@@ -36,5 +34,4 @@ public class CompuertaAND: IValorVerdad
             return resultado;
         }
     }
-
 }

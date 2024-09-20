@@ -13,7 +13,6 @@ public class CompuertaNOT: IValorVerdad
     {
         return this.nombre;
     }
-
     public IValorVerdad GetEntrada()
     {
         return this.entrada;
@@ -25,5 +24,4 @@ public class CompuertaNOT: IValorVerdad
             return !this.entrada.Evaluar;
         }
     }
-    
 }
