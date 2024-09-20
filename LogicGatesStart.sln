@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicGatesStart", "LogicGat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicGatesStartTests", "LogicGatesStartTests\LogicGatesStartTests.csproj", "{5C87BD66-53FC-47B3-AA3C-91C85A2A4346}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{D0C3E125-29E2-4239-BD9B-FD15A1FD2A00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{5C87BD66-53FC-47B3-AA3C-91C85A2A4346}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C87BD66-53FC-47B3-AA3C-91C85A2A4346}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C87BD66-53FC-47B3-AA3C-91C85A2A4346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0C3E125-29E2-4239-BD9B-FD15A1FD2A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0C3E125-29E2-4239-BD9B-FD15A1FD2A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0C3E125-29E2-4239-BD9B-FD15A1FD2A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0C3E125-29E2-4239-BD9B-FD15A1FD2A00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

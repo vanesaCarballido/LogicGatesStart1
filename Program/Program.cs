@@ -1,4 +1,4 @@
-namespace LogicGatesStart;
+using LogicGatesStart;
 
 
 public class Program
