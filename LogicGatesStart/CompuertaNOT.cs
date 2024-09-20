@@ -9,10 +9,14 @@ public class CompuertaNOT: IValorVerdad
         this.nombre = nombre;
         this.entrada = entrada1;
     }
-
     public string GetNombre()
     {
         return this.nombre;
+    }
+
+    public IValorVerdad GetEntrada()
+    {
+        return this.entrada;
     }
     public bool Evaluar
     {

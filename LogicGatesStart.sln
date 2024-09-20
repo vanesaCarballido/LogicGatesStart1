@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicGatesStart", "LogicGatesStart\LogicGatesStart.csproj", "{CC215D04-A4FD-439D-A0AB-CCD403CCD2D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicGatesStartTests", "LogicGatesStartTests\LogicGatesStartTests.csproj", "{5C87BD66-53FC-47B3-AA3C-91C85A2A4346}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{CC215D04-A4FD-439D-A0AB-CCD403CCD2D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC215D04-A4FD-439D-A0AB-CCD403CCD2D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC215D04-A4FD-439D-A0AB-CCD403CCD2D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C87BD66-53FC-47B3-AA3C-91C85A2A4346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C87BD66-53FC-47B3-AA3C-91C85A2A4346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C87BD66-53FC-47B3-AA3C-91C85A2A4346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C87BD66-53FC-47B3-AA3C-91C85A2A4346}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

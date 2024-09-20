@@ -14,6 +14,11 @@ public class CompuertaAND: IValorVerdad
     {
         return this.nombre;
     }
+
+    public List<IValorVerdad> GetEntradas()
+    {
+        return this.entradas;
+    }
     public void AgregarEntrada(IValorVerdad entrada)
     {
         this.entradas.Add(entrada);
